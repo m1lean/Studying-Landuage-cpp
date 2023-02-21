@@ -1,0 +1,37 @@
+#include <ctime>
+#include <iostream>
+using namespace std;
+
+int main() {
+    srand(time(NULL));
+    int count = 0, r = 0;
+    string user;
+   
+
+      string mss1[5] = {"Flowers", "Hello", "Yes", "No", "Sun"};
+    string mss2[5] = {"Цветы", "Привет", "Да", "Нет", "Солнце"};
+   while (count != 5) {
+        r = rand() % 5;
+      
+
+        cout
+        << mss1[r] << endl;
+        cin >> user;
+       if (user == mss2[r]) {
+            
+
+          cout
+          << "Отлично!" << endl;
+            count++;
+          
+    }
+        else {
+           
+
+          cout
+          << "Неверно!" << endl;
+          
+    }
+      
+  }
+}
